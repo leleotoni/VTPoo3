@@ -1,0 +1,55 @@
+﻿@model POO3.Models.ViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Episodio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <a asp-="@Html.DisplayNameFor(model => model.Episodio.Idserie)">Número Série</a>
+                <input asp-for="Episodio.Idserie" class="form-control" />
+                <span asp-validation-for="Episodio.Idserie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-="@Html.DisplayNameFor(model => model.Episodio.Nomeepisodio)">Nome Episódio</a>
+                <input asp-for="Episodio.Nomeepisodio" class="form-control" />
+                <span asp-validation-for="Episodio.Nomeepisodio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-="@Html.DisplayNameFor(model => model.Episodio.Numeroepisodio)">Número Episódio</a>
+                <input asp-for="Episodio.Numeroepisodio" class="form-control" />
+                <span asp-validation-for="Episodio.Numeroepisodio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-="@Html.DisplayNameFor(model => model.Episodio.Temporada)">Temporada</a>
+                <input asp-for="Episodio.Temporada" class="form-control" />
+                <span asp-validation-for="Episodio.Temporada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-="@Html.DisplayNameFor(model => model.Episodio.Avaliacao)">Avaliação</a>
+                <input asp-for="Episodio.Avaliacao" class="form-control" />
+                <span asp-validation-for="Episodio.Avaliacao" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

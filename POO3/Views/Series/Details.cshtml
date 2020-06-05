@@ -1,0 +1,71 @@
+﻿@model POO3.Models.ViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Serie</h4>
+    <h3>
+        @Html.DisplayFor(model => Model.Serie.Nome)
+    </h3>
+    <hr />
+    <table class=" table">
+        <thead>
+            <tr>
+                <th>
+                    <a asp-="@Html.DisplayNameFor(model => model.Episodio.Nomeepisodio)">Nome Episódio</a>
+                </th>
+
+                <th>
+                    <a asp-="@Html.DisplayNameFor(model => model.Episodio.Numeroepisodio)">Número Episódio</a>
+                </th>
+
+                <th>
+                    <a asp-="@Html.DisplayNameFor(model => model.Episodio.Temporada)">Temporada</a>
+                </th>
+
+                <th>
+                    <a asp-="@Html.DisplayNameFor(model => model.Episodio.Avaliacao)">Avaliação</a>
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (int item in Model.Episodio.Nomeepisodio)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Episodio.Nomeepisodio)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Episodio.Numeroepisodio)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Episodio.Temporada)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Episodio.Avaliacao)
+                </td>
+            </tr>
+
+            }
+            </tbody>
+        </table>
+</div>
+
+
+
+                
+
+
+
+
+<div>
+ 
+    <a asp-action="Edit" asp-route-id="@Model.Episodio.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
