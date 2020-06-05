@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aSjYA1Sij8wVsQ2Yq7dwp1OOtVlgxszuYG37inUpdbh0N6mj/bPa5rEl9E4Z3lLm1V50wyfYLSUTfB135bNbmg==",
+  "dgSpecHash": "2NAd4JQ0neCPrxC18eQ4wYNGSwSgTmL0qPz6RTDFVqlpFpGcOMkExAHtAHjXpiW6kNAXfay1WpRXT0mP5LUEcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leleo\\source\\repos\\POO3\\POO3\\POO3.csproj",
+  "projectFilePath": "C:\\Users\\leleo\\source\\repos\\VTPoo3\\POO3\\POO3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leleo\\.nuget\\packages\\cssparser\\1.3.0\\cssparser.1.3.0.nupkg.sha512",
     "C:\\Users\\leleo\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

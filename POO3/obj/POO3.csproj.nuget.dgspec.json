@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leleo\\source\\repos\\POO3\\POO3\\POO3.csproj": {}
+    "C:\\Users\\leleo\\source\\repos\\VTPoo3\\POO3\\POO3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leleo\\source\\repos\\POO3\\POO3\\POO3.csproj": {
+    "C:\\Users\\leleo\\source\\repos\\VTPoo3\\POO3\\POO3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leleo\\source\\repos\\POO3\\POO3\\POO3.csproj",
+        "projectUniqueName": "C:\\Users\\leleo\\source\\repos\\VTPoo3\\POO3\\POO3.csproj",
         "projectName": "POO3",
-        "projectPath": "C:\\Users\\leleo\\source\\repos\\POO3\\POO3\\POO3.csproj",
+        "projectPath": "C:\\Users\\leleo\\source\\repos\\VTPoo3\\POO3\\POO3.csproj",
         "packagesPath": "C:\\Users\\leleo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leleo\\source\\repos\\POO3\\POO3\\obj\\",
+        "outputPath": "C:\\Users\\leleo\\source\\repos\\VTPoo3\\POO3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
