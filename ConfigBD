@@ -1,0 +1,59 @@
+CREATE SCHEMA `poo3` ;
+
+CREATE TABLE `poo3`.`serie` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `poo3`.`episodio` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `idserie` INT NULL,
+  `nomeepisodio` VARCHAR(45) NULL,
+  `numeroepisodio` INT NULL,
+  `temporada` INT NULL,
+  `avaliacao` INT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `idserie_idx` (`idserie` ASC) VISIBLE,
+  CONSTRAINT `idserie`
+    FOREIGN KEY (`idserie`)
+    REFERENCES `poo3`.`serie` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+INSERT INTO `poo3`.`serie` (`id`, `nome`) VALUES ('1', 'La Casa de Papel');
+INSERT INTO `poo3`.`serie` (`id`, `nome`) VALUES ('2', 'The Walking Dead');
+INSERT INTO `poo3`.`serie` (`id`, `nome`) VALUES ('3', 'O Atirador');
+INSERT INTO `poo3`.`serie` (`id`, `nome`) VALUES ('4', 'Dark');
+INSERT INTO `poo3`.`serie` (`id`, `nome`) VALUES ('5', 'Pretty Little Liars');
+
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('1', '1', 'Episodio 1', '1', '1', '10');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('2', '1', 'Episodio 2', '2', '1', '10');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('3', '1', 'Episodio 3', '3', '1', '10');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('4', '1', 'Episodio 4', '4', '1', '10');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('5', '1', 'Episodio 5', '5', '1', '10');
+
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('6', '2', 'Adeus, passado', '1', '1', '9');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('7', '2', 'Entranhas', '2', '1', '9');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('8', '2', 'Vá falar com sapos', '3', '1', '9');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('9', '2', 'Hermanos', '4', '1', '9');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('10', '2', 'Wildfire', '5', '1', '9');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('11', '2', 'IT-19', '6', '1', '9');
+
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('12', '3', 'Ponto de impacto', '1', '1', '8');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('13', '3', 'Remoção', '2', '1', '8');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('14', '3', 'Musa Qala', '3', '1', '8');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('15', '3', 'Vigia', '4', '1', '8');
+
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('16', '4', 'Segredos', '1', '1', '7');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('17', '4', 'Mentiras', '2', '1', '7');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('18', '4', 'Passado e presente', '3', '1', '7');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('19', '4', 'Vidas duplas', '4', '1', '7');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('20', '4', 'Verdades', '5', '1', '7');
+
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('21', '5', 'Piloto', '1', '1', '6');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('22', '5', 'O incidente da Jenna', '2', '1', '6');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('23', '5', 'O sol é para todas as garotas', '3', '1', '6');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('24', '5', 'Conseguem me ouvir?', '4', '1', '6');
+INSERT INTO `poo3`.`episodio` (`id`, `idserie`, `nomeepisodio`, `numeroepisodio`, `temporada`, `avaliacao`) VALUES ('25', '5', 'A verdade dói', '5', '1', '6');
+
